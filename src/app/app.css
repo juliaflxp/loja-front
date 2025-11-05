@@ -2,30 +2,30 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: #007bff;
+  background-color: #1c1f26;
   padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .nav-link {
   text-decoration: none;
-  color: #fff;
+  color: #e0e0e0;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  transition: 0.2s;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  color: #00c6ff;
+  transform: translateY(-2px);
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #00c6ff;
 }
 
 .nav-icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
