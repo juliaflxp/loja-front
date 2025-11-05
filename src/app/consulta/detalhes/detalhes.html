@@ -1,0 +1,37 @@
+<div class="detalhes-container">
+  <button class="btn-voltar" (click)="voltar()">← Voltar para Início</button>
+
+  @if (loading) {
+    <div class="loading">
+      <p>loading produto...</p>
+    </div>
+  }
+
+  @if (erro) {
+    <div class="erro">
+      <p>{{ erro }}</p>
+      <button class="btn-voltar" (click)="voltar()">Voltar para início</button>
+    </div>
+  }
+
+  @if (produto && !loading) {
+    <div class="produto-detalhes">
+      <div class="produto-header">
+        <h1>{{ produto.nome }}</h1>
+        <span class="marca">{{ produto.marca }}</span>
+      </div>
+
+      <div class="produto-info">
+        <div class="info-item">
+          <strong>Preço: </strong>
+          <span class="preco">R$ {{ produto.preco }}</span>
+        </div>
+      </div>
+
+      <div class="info-item">
+          <strong>Quantidade disponível: </strong>
+          <span class="quantidade">{{ produto.quantidade }}</span>
+        </div>
+    </div>
+}
+</div>

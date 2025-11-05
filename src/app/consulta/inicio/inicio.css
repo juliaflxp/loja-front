@@ -1,0 +1,27 @@
+.produto-card {
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.produto-nome {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.produto-preco {
+  font-size: 1rem;
+  color: #388e3c;
+}

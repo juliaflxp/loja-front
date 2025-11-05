@@ -1,0 +1,6 @@
+@for(p of produtos; track p.id){
+    <div class="produto-card">
+        <p class="produto-nome" (click)="verDetalhes(p.id)"> {{p.nome}} </p> 
+        <p class="produto-preco"> Por: R${{p.preco}} </p>
+    </div>
+}

@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #007bff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
